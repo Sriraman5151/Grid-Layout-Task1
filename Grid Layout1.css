@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    height: 100vh;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   height: 400px;
+   width: 600px;
+   gap: 10px;
+}
+.one{
+background-color: green;
+grid-column: span 1;
+grid-row: span 3;
+}
+.two{
+    background-color: green;
+    grid-column: span 2;
+    grid-row:span 1;
+}
+.three,.five,.seven{
+    background-color:red;
+}
+.four,.eight{
+    background-color: yellow;
+}
+.six{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: green;
+}
